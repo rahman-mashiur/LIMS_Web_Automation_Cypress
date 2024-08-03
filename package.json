@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "rm -r ./cypress/reports/*.json",
+    "test": "echo Borshon inside test",
+    "posttest": "echo Borshon inside posttest",
+    "merge-report": "mochawesome-merge ./cypress/reports/*json > ./SingleReport.json",
+    "generate-htmlreport": "marge ./SingleReport.json --reportDir ./cypress/reports"
   },
   "author": "Borshon",
   "license": "ISC",
   "dependencies": {
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
-    "mochawesome-report-generator": "^6.2.0"
+    "mochawesome-report-generator": "^6.2.0",
+    "rimraf": "^6.0.1"
   },
   "devDependencies": {
     "@cypress/xpath": "^2.0.3",
