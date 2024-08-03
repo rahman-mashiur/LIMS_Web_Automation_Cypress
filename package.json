@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pretest": "rm -r ./cypress/reports/*.json",
+    "pretest": "rimraf -r ./cypress/reports/*.json",
     "test": "echo Borshon inside test",
     "posttest": "echo Borshon inside posttest",
     "merge-report": "mochawesome-merge ./cypress/reports/*json > ./SingleReport.json",
