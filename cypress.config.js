@@ -6,6 +6,14 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: 'http://103.84.36.246:81/',
-    experimentalRunAllSpecs: true
+    experimentalRunAllSpecs: true,
+    "reporter": "mochawesome",
+    "reporterOptions":{
+      "charts":true,
+      "overwrite":false,
+      "html":false,
+      "json":true,
+      "reportDir": "cypress/reports"
+    }
   },
 });
