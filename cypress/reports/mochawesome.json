@@ -1,61 +1,22 @@
 {
   "stats": {
-    "suites": 2,
-    "tests": 2,
-    "passes": 1,
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
     "pending": 0,
     "failures": 1,
-    "testsRegistered": 2,
-    "passPercent": 50,
+    "start": "2024-08-03T18:06:57.845Z",
+    "end": "2024-08-03T18:07:59.408Z",
+    "duration": 61563,
+    "testsRegistered": 1,
+    "passPercent": 0,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
-    "hasSkipped": false,
-    "start": "2024-08-03T18:06:57.845Z",
-    "end": "2024-08-03T18:08:02.448Z",
-    "duration": 64603
+    "hasSkipped": false
   },
   "results": [
-    {
-      "uuid": "75e31f53-ec14-4349-a526-8cf792001425",
-      "title": "",
-      "fullFile": "cypress\\e2e\\tests\\signInButtonTest.cy.js",
-      "file": "cypress\\e2e\\tests\\signInButtonTest.cy.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [
-        {
-          "title": "signInButtonNameTest",
-          "fullTitle": "signInButtonNameTest",
-          "timedOut": null,
-          "duration": 900,
-          "state": "passed",
-          "speed": "fast",
-          "pass": true,
-          "fail": false,
-          "pending": false,
-          "context": null,
-          "code": "lndP.navigate(url);\nlndP.locate_signin_btn().should('be.enabled').should('be.visible').and('have.text', 'সাইন ইন');",
-          "err": {},
-          "uuid": "5621a7bb-ae7e-4d2c-a5c6-f51f12be1673",
-          "parentUUID": "75e31f53-ec14-4349-a526-8cf792001425",
-          "isHook": false,
-          "skipped": false
-        }
-      ],
-      "suites": [],
-      "passes": [
-        "5621a7bb-ae7e-4d2c-a5c6-f51f12be1673"
-      ],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 900,
-      "root": true,
-      "rootEmpty": false,
-      "_timeout": 2000
-    },
     {
       "uuid": "e1d3c1db-1632-453e-be72-193a2ba11721",
       "title": "",

@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "pretest": "rimraf -g ./cypress/reports/*.json",
-    "test": "echo Borshon inside test",
-    "posttest": "echo Borshon inside posttest",
+    "test": "npm run cypress-test || npm run posttest",
+    "cypress-test": "cypress run",
+    "posttest": "npm run merge-report && npm run generate-htmlreport",
     "merge-report": "mochawesome-merge ./cypress/reports/*json > ./SingleReport.json",
     "generate-htmlreport": "marge ./SingleReport.json --reportDir ./cypress/reports"
   },
