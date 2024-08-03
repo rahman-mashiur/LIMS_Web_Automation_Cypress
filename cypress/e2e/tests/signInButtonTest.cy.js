@@ -1,6 +1,6 @@
 /// <reference types='cypress' />
 
-import { LandingPage } from "../pages/LandingPage.cy";
+import { LandingPage } from "../pages/LandingPage";
 
 let lndP = new LandingPage()
 

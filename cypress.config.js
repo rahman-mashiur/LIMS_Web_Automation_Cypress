@@ -5,6 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: 'http://103.84.36.246:81/'
+    baseUrl: 'http://103.84.36.246:81/',
+    experimentalRunAllSpecs: true
   },
 });

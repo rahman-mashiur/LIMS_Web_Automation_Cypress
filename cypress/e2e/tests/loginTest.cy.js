@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import { LandingPage } from "../pages/LandingPage.cy";
-import { LoginPage } from "../pages/LoginPage.cy";
+import { LandingPage } from "../pages/LandingPage";
+import { LoginPage } from "../pages/LoginPage";
 
 const lndP = new LandingPage()
 const loginP = new LoginPage()
