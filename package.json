@@ -8,7 +8,9 @@
   },
   "author": "Borshon",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^13.13.1"
+  "dependencies": {},
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^13.13.2"
   }
 }
