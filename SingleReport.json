@@ -2,23 +2,23 @@
   "stats": {
     "suites": 2,
     "tests": 2,
-    "passes": 1,
+    "passes": 2,
     "pending": 0,
-    "failures": 1,
+    "failures": 0,
     "testsRegistered": 2,
-    "passPercent": 50,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2024-08-03T18:06:57.845Z",
-    "end": "2024-08-03T18:08:02.448Z",
-    "duration": 64603
+    "start": "2024-09-15T11:39:25.538Z",
+    "end": "2024-09-15T11:39:32.415Z",
+    "duration": 6877
   },
   "results": [
     {
-      "uuid": "75e31f53-ec14-4349-a526-8cf792001425",
+      "uuid": "beb0fb41-e044-4da5-9838-69023c21fa32",
       "title": "",
       "fullFile": "cypress\\e2e\\tests\\signInButtonTest.cy.js",
       "file": "cypress\\e2e\\tests\\signInButtonTest.cy.js",
@@ -29,7 +29,7 @@
           "title": "signInButtonNameTest",
           "fullTitle": "signInButtonNameTest",
           "timedOut": null,
-          "duration": 900,
+          "duration": 692,
           "state": "passed",
           "speed": "fast",
           "pass": true,
@@ -38,26 +38,26 @@
           "context": null,
           "code": "lndP.navigate(url);\nlndP.locate_signin_btn().should('be.enabled').should('be.visible').and('have.text', 'সাইন ইন');",
           "err": {},
-          "uuid": "5621a7bb-ae7e-4d2c-a5c6-f51f12be1673",
-          "parentUUID": "75e31f53-ec14-4349-a526-8cf792001425",
+          "uuid": "4401837f-9d0c-44ba-a344-2ad7e2f5292b",
+          "parentUUID": "beb0fb41-e044-4da5-9838-69023c21fa32",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [],
       "passes": [
-        "5621a7bb-ae7e-4d2c-a5c6-f51f12be1673"
+        "4401837f-9d0c-44ba-a344-2ad7e2f5292b"
       ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 900,
+      "duration": 692,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000
     },
     {
-      "uuid": "e1d3c1db-1632-453e-be72-193a2ba11721",
+      "uuid": "26aabc26-3193-4743-a5b9-f6b88ba4cc79",
       "title": "",
       "fullFile": "cypress\\e2e\\tests\\loginTest.cy.js",
       "file": "cypress\\e2e\\tests\\loginTest.cy.js",
@@ -68,33 +68,29 @@
           "title": "LIMS Test",
           "fullTitle": "LIMS Test",
           "timedOut": null,
-          "duration": 61494,
-          "state": "failed",
-          "speed": null,
-          "pass": false,
-          "fail": true,
+          "duration": 4751,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
           "pending": false,
           "context": null,
           "code": "lndP.navigate(url);\nlndP.click_signin_btn();\nloginP.enteruname(uname);\nloginP.enterPassword(password);\nloginP.click_signin_btn();",
-          "err": {
-            "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
-            "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (http://103.84.36.246:81/__cypress/runner/cypress_runner.js:130948:64)\n    at <unknown> (http://103.84.36.246:81/__cypress/runner/cypress_runner.js:131264:16)\n    at tryCatcher (http://103.84.36.246:81/__cypress/runner/cypress_runner.js:1807:23)\n    at <unknown> (http://103.84.36.246:81/__cypress/runner/cypress_runner.js:4186:41)\n    at tryCatcher (http://103.84.36.246:81/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://103.84.36.246:81/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://103.84.36.246:81/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://103.84.36.246:81/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://103.84.36.246:81/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://103.84.36.246:81/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://103.84.36.246:81/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://103.84.36.246:81/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://103.84.36.246:81/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at LoginPage.enteruname (webpack://lims_cypress/./cypress/e2e/pages/LoginPage.js:8:11)\n    at Context.eval (webpack://lims_cypress/./cypress/e2e/tests/loginTest.cy.js:19:11)",
-            "diff": null
-          },
-          "uuid": "e24ebbc1-9140-42ab-b9d3-c2de6002c192",
-          "parentUUID": "e1d3c1db-1632-453e-be72-193a2ba11721",
+          "err": {},
+          "uuid": "0d6a046e-fb10-4a4a-b679-7518e3cb4f20",
+          "parentUUID": "26aabc26-3193-4743-a5b9-f6b88ba4cc79",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [],
-      "passes": [],
-      "failures": [
-        "e24ebbc1-9140-42ab-b9d3-c2de6002c192"
+      "passes": [
+        "0d6a046e-fb10-4a4a-b679-7518e3cb4f20"
       ],
+      "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 61494,
+      "duration": 4751,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-08-03T18:08:01.413Z",
-    "end": "2024-08-03T18:08:02.448Z",
-    "duration": 1035,
+    "start": "2024-09-15T11:39:31.679Z",
+    "end": "2024-09-15T11:39:32.415Z",
+    "duration": 736,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "75e31f53-ec14-4349-a526-8cf792001425",
+      "uuid": "beb0fb41-e044-4da5-9838-69023c21fa32",
       "title": "",
       "fullFile": "cypress\\e2e\\tests\\signInButtonTest.cy.js",
       "file": "cypress\\e2e\\tests\\signInButtonTest.cy.js",
@@ -29,7 +29,7 @@
           "title": "signInButtonNameTest",
           "fullTitle": "signInButtonNameTest",
           "timedOut": null,
-          "duration": 900,
+          "duration": 692,
           "state": "passed",
           "speed": "fast",
           "pass": true,
@@ -38,20 +38,20 @@
           "context": null,
           "code": "lndP.navigate(url);\nlndP.locate_signin_btn().should('be.enabled').should('be.visible').and('have.text', 'সাইন ইন');",
           "err": {},
-          "uuid": "5621a7bb-ae7e-4d2c-a5c6-f51f12be1673",
-          "parentUUID": "75e31f53-ec14-4349-a526-8cf792001425",
+          "uuid": "4401837f-9d0c-44ba-a344-2ad7e2f5292b",
+          "parentUUID": "beb0fb41-e044-4da5-9838-69023c21fa32",
           "isHook": false,
           "skipped": false
         }
       ],
       "suites": [],
       "passes": [
-        "5621a7bb-ae7e-4d2c-a5c6-f51f12be1673"
+        "4401837f-9d0c-44ba-a344-2ad7e2f5292b"
       ],
       "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 900,
+      "duration": 692,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000
