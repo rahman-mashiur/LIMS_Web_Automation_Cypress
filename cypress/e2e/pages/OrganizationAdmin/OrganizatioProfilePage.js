@@ -55,40 +55,48 @@ export class OrganizationProfilePage {
     enter_orgWebsite() {
         cy.get(this.orgWebsite).clear().type('')
     }
+    select_orgEstablishDate() {
+        cy.get(this.orgEstablishDate).click()
+
+        // getCalander(){
+        //     return cy.get('body > div.base-Popper-root.MuiPickersPopper-root.css-1mtsuo7 > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPickersPopper-paper.css-18j5nrn > div > div > div')
+        // }
+
+    }
     enter_tinNumber() {
         cy.get(this.tinNumber).clear().type('234322776899')
     }
-    enter_binNumber(){
+    enter_binNumber() {
         cy.get(this.binNumber).clear().type('234321876')
     }
-    enter_fireLicenseNumber(){
+    enter_fireLicenseNumber() {
         cy.get(this.fireLicenseNumber).clear().type('')
     }
-    enter_difeLicenseNo(){
+    enter_difeLicenseNo() {
         cy.get(this.difeLicenseNo).clear().type()
     }
-    click_govtOrg_checkBox(){
+    click_govtOrg_checkBox() {
         cy.get(this.govtOrg_checkBox).click()
     }
-    enter_companyProfileDetails(){
+    enter_companyProfileDetails() {
         cy.get(this.companyProfileDetails).clear().type('')
     }
-    enter_contactPersonName(){
+    enter_contactPersonName() {
         cy.get(this.contactPersonName).clear().type('Md. Rafikul Islam')
     }
-    enter_contactPersonDesignation(){
+    enter_contactPersonDesignation() {
         cy.get(this.contactPersonDesignation).clear().type('Proprietor')
     }
-    enter_contactPersonEmail(){
+    enter_contactPersonEmail() {
         cy.get(this.contactPersonEmail).clear().type('rafik@simectannery.com')
     }
-    click_termsPrivacyCheckbox(){
+    click_termsPrivacyCheckbox() {
         cy.get(this.termsPrivacyCheckbox).click()
     }
-    click_updateCancel_btn(){
+    click_updateCancel_btn() {
         cy.get(this.updateCancel_btn).click()
     }
-    click_updateSubmit_btn(){
+    click_updateSubmit_btn() {
         cy.get(this.updateSubmit_btn).click()
     }
 }
